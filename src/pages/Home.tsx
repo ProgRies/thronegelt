@@ -39,7 +39,6 @@ const Home = () => {
         {/* Twitter Section */}
         <div className="mb-16 p-8 rounded-lg bg-purple-900/20 border border-purple-500/20 backdrop-blur-sm">
           <div className="text-center mb-8">
-            <Twitter className="w-12 h-12 text-purple-400 mx-auto mb-4" />
             <h2 className="text-2xl font-bold mb-4">Recieve free thrones!</h2>
             <p className="text-purple-300">
               DM your wallet address to this X Account to recieve free thrones!
@@ -84,7 +83,7 @@ const Home = () => {
                 )}
               </div>
               <img
-                src="/qr-code.png"
+                src="images/thronegeld.png"
                 alt="Throne Gelt Wallet QR Code"
                 className="w-48 h-48 rounded-lg border-2 border-purple-500/20"
               />
