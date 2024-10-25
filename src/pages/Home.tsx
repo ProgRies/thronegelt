@@ -20,14 +20,14 @@ const Home = () => {
     <div className="min-h-screen bg-gradient-to-b from-[#1a0033] to-[#000033] text-purple-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
-        <div className="text-center mb-16">
+        <div className="text-center  mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
             Throne Gelt
           </h1>
           <img
-                src="images/thronegeld.png"
+                src="images/thronegelt.png"
                 alt="Throne Gelt Coin Design"
-                className="w-56 h-56 rounded-lg border-2 border-black-500/20"
+                className="w-56 h-56 rounded-lg border-black-500/20"
               />
           <p className="text-xl md:text-2xl text-purple-300 mb-8">
             The Emperor's Currency on Cardano
