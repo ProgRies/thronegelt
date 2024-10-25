@@ -24,6 +24,11 @@ const Home = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
             Throne Gelt
           </h1>
+          <img
+                src="images/thronegeld.png"
+                alt="Throne Gelt Coin Design"
+                className="w-56 h-56 rounded-lg border-2 border-black-500/20"
+              />
           <p className="text-xl md:text-2xl text-purple-300 mb-8">
             The Emperor's Currency on Cardano
           </p>
@@ -83,7 +88,7 @@ const Home = () => {
                 )}
               </div>
               <img
-                src="images/thronegeld.png"
+                src="images/thronegeld_qr.png"
                 alt="Throne Gelt Wallet QR Code"
                 className="w-48 h-48 rounded-lg border-2 border-purple-500/20"
               />
