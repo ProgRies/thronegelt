@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes imperialGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.2),
+                0 0 30px rgba(168, 85, 247, 0.1),
+                0 0 45px rgba(168, 85, 247, 0.05);
+  }
+  25% {
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.3),
+                0 0 40px rgba(147, 51, 234, 0.15),
+                0 0 60px rgba(147, 51, 234, 0.075);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(126, 34, 206, 0.4),
+                0 0 50px rgba(126, 34, 206, 0.2),
+                0 0 75px rgba(126, 34, 206, 0.1);
+  }
+  75% {
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.3),
+                0 0 40px rgba(147, 51, 234, 0.15),
+                0 0 60px rgba(147, 51, 234, 0.075);
+  }
+}
+
+@keyframes powerGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3),
+                0 0 30px rgba(56, 189, 248, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(125, 211, 252, 0.4),
+                0 0 50px rgba(125, 211, 252, 0.3);
+  }
+}
+
+.power-glow {
+  animation: powerGlow 2s infinite ease-in-out;
+}
+
+.imperial-glow {
+  animation: imperialGlow 8s infinite ease-in-out;
+}
