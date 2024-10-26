@@ -27,7 +27,7 @@ const Home = () => {
           <img
                 src="/images/thronegelt.png"
                 alt="Throne Gelt Coin Design"
-                className="w-56 h-56 rounded-lg border-black-500/20 mx-auto"
+                className="w-65 h-65 rounded-lg border-black-500/20 mx-auto"
               />
           <p className="text-xl md:text-2xl text-purple-300 mb-8">
             The Emperor's Currency
