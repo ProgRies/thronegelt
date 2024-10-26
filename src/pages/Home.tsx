@@ -20,14 +20,14 @@ const Home = () => {
     <div className="min-h-screen bg-gradient-to-b from-[#1a0033] to-[#000033] text-purple-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
-        <div className="text-center  mb-16">
+        <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
             Throne Gelt
           </h1>
           <img
                 src="/images/thronegelt.png"
                 alt="Throne Gelt Coin Design"
-                className="w-56 h-56 rounded-lg border-black-500/20"
+                className="w-56 h-56 rounded-lg border-black-500/20 mx-auto"
               />
           <p className="text-xl md:text-2xl text-purple-300 mb-8">
             The Emperor's Currency
@@ -42,7 +42,7 @@ const Home = () => {
         </div>
 
         {/* Twitter Section */}
-        <div className="mb-16 p-8 rounded-lg bg-purple-900/20 border border-purple-500/20 backdrop-blur-sm">
+        <div className="mb-16 p-8 rounded-lg backdrop-blur-sm">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold mb-4">Recieve free thrones!</h2>
             <p className="text-purple-300">
@@ -62,38 +62,6 @@ const Home = () => {
               <ExternalLink className="w-4 h-4 ml-2" />
             </a>
           </div>
-
-          <div className="mt-8 p-6 rounded-lg bg-purple-950/50 border border-purple-500/20">
-            <div className="flex flex-col items-center space-y-4">
-              <p className="text-purple-300 text-center mb-2">
-                Leave your gifts to the Emperor at this sacred address:
-              </p>
-              <div className="relative w-full max-w-md">
-                <div
-                  className="p-3 pr-12 rounded bg-purple-900/40 border border-purple-500/20 font-mono text-sm break-all cursor-pointer hover:bg-purple-800/40 transition-all"
-                  onClick={handleCopy}
-                >
-                  {walletAddress}
-                  <button
-                    className="absolute right-3 top-1/2 -translate-y-1/2"
-                    onClick={handleCopy}
-                  >
-                    <Copy className={`w-5 h-5 ${copied ? 'text-green-400' : 'text-purple-400'}`} />
-                  </button>
-                </div>
-                {copied && (
-                  <div className="absolute -right-2 top-12 bg-green-900/90 text-green-100 px-3 py-1 rounded text-sm">
-                    Copied!
-                  </div>
-                )}
-              </div>
-              <img
-                src="/images/thronegeld_qr.png"
-                alt="Throne Gelt Wallet QR Code"
-                className="w-48 h-48 rounded-lg border-2 border-purple-500/20"
-              />
-            </div>
-          </div>
         </div>
 
         {/* About Section */}
@@ -111,7 +79,6 @@ const Home = () => {
               <li>• Total Supply: 40,000,000,000 Thrones</li>
               <li>• Network: Cardano</li>
               <li>• Distribution: Community-focused</li>
-              <li>• Utility: Emperor's Blessing</li>
             </ul>
           </div>
         </div>
