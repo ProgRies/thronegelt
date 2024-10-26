@@ -25,7 +25,7 @@ const Home = () => {
             Throne Gelt
           </h1>
           <img
-                src="src/images/thronegelt.png"
+                src="/images/thronegelt.png"
                 alt="Throne Gelt Coin Design"
                 className="w-56 h-56 rounded-lg border-black-500/20"
               />
@@ -88,7 +88,7 @@ const Home = () => {
                 )}
               </div>
               <img
-                src="src/images/thronegeld_qr.png"
+                src="/images/thronegeld_qr.png"
                 alt="Throne Gelt Wallet QR Code"
                 className="w-48 h-48 rounded-lg border-2 border-purple-500/20"
               />
