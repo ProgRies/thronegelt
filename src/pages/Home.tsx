@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Twitter, Copy, ExternalLink, Sword, Scroll } from 'lucide-react';
+import { ExternalLink, Sword, Scroll } from 'lucide-react';
 
 const Home = () => {
   return (
