@@ -30,7 +30,7 @@ const Home = () => {
                 className="w-56 h-56 rounded-lg border-black-500/20"
               />
           <p className="text-xl md:text-2xl text-purple-300 mb-8">
-            The Emperor's Currency on Cardano
+            The Emperor's Currency
           </p>
           <Link
             to="/game"
