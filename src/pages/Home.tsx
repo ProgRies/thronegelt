@@ -1,21 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Twitter, Copy, ExternalLink, Sword, Scroll } from 'lucide-react';
+import { ExternalLink, Sword, Scroll } from 'lucide-react';
 
 const Home = () => {
-  const [copied, setCopied] = useState(false);
-  const walletAddress = 'addr1qy2k8acqy7fxkyr8h2847q5xjqz9kmrvgs0v4j95d8j9vxf234k8wjn4v8lyg3l8p2673sm37dlmyk5mgvj8584t7yxqxu7x0k';
-
-  const handleCopy = async () => {
-    try {
-      await navigator.clipboard.writeText(walletAddress);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
-      console.error('Failed to copy:', err);
-    }
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#1a0033] to-[#000033] text-purple-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -27,7 +14,7 @@ const Home = () => {
           <img
                 src="/images/thronegelt.png"
                 alt="Throne Gelt Coin Design"
-                className="w-56 h-56 rounded-lg border-black-500/20 mx-auto"
+                className="w-65 h-65 rounded-lg border-black-500/20 mx-auto"
               />
           <p className="text-xl md:text-2xl text-purple-300 mb-8">
             The Emperor's Currency
