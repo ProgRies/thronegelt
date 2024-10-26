@@ -69,8 +69,9 @@ const Home = () => {
           <div className="p-6 rounded-lg bg-purple-900/20 border border-purple-500/20">
             <h3 className="text-xl font-bold mb-4">About Throne Gelt</h3>
             <p className="text-purple-300">
-              Throne Gelt represents the Emperor's authority in the digital realm, 
-              built on the robust Cardano blockchain. Prove your Loaylty to the emperor and be awarded a SMark of the Ultramarines!
+            Throne Gelt is a cryptocurrency on the Cardano blockchain,
+            known for its eco-friendly, secure, and decentralized design. 
+            As a MEME coin, Throne Gelt focuses on fun, art, and community tech projects, not profit-making.
             </p>
           </div>
           <div className="p-6 rounded-lg bg-purple-900/20 border border-purple-500/20">
@@ -79,6 +80,7 @@ const Home = () => {
               <li>• Total Supply: 40,000,000,000 Thrones</li>
               <li>• Network: Cardano</li>
               <li>• Distribution: Community-focused</li>
+              <li>• Policy: b606897eaeb9ecbb7f08acb411d357b4248bbd4be64ac512034c85fe</li>
             </ul>
           </div>
         </div>
