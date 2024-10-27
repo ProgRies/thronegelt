@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Home, Scroll, Trophy } from 'lucide-react';
+import { Home, Scroll} from 'lucide-react';
 
 const Navbar = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#1a0033]/80 backdrop-blur-sm border-b border-purple-900/30">
+    <nav className="bg-[#1a0033]/80 backdrop-blur-sm border-b border-purple-900/30 fixed top-0 left-0 w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
@@ -50,17 +50,6 @@ const Navbar = () => {
               <Home className="w-5 h-5" />
               {getNavText('Home', 'Home') && (
                 <span className="text-xs mt-1">{getNavText('Homepage', 'Home')}</span>
-              )}
-            </Link>
-            
-            <Link 
-              to="/victories" 
-              className="flex flex-col items-center px-2 py-1 text-purple-200 hover:text-purple-400 transition"
-              title="Victories"
-            >
-              <Trophy className="w-5 h-5" />
-              {getNavText('Victories', 'Glory') && (
-                <span className="text-xs mt-1">{getNavText('Victories', 'Glory')}</span>
               )}
             </Link>
             
