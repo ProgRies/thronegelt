@@ -4,7 +4,7 @@ import { ExternalLink, Coins, Scroll } from 'lucide-react';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#1a0033] to-[#000033] text-purple-100 font-sans overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-[#2a0044] to-[#000033] via-[#000022] text-purple-100 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
         <div className="text-center mb-20">
@@ -66,7 +66,7 @@ const Home = () => {
             What is Throne Gelt?
           </h2>
           <p className="text-purple-300 mb-8 text-lg md:text-3xl">
-            Throne Gelt is a <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse">currency</span>, similar to Bitcoin or Ethereum.
+            Throne Gelt is a <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse">cryptocurrency</span>, similar to Bitcoin or Ethereum.
           </p>
           <p className="text-purple-300 mb-8 text-lg md:text-3xl">
             There are <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse">40 Billion thrones</span> in the emperors treasury
