@@ -19,13 +19,6 @@ const Home = () => {
           <p className="text-xl md:text-2xl text-purple-300 mb-8">
             The Emperor's Currency
           </p>
-          <Link
-            to="/game"
-            className="inline-flex items-center px-6 py-3 bg-purple-700 hover:bg-purple-600 rounded-lg text-white font-semibold transition-all"
-          >
-            <Sword className="w-5 h-5 mr-2" />
-            Start Your Mission
-          </Link>
         </div>
 
         {/* Twitter Section */}
@@ -48,6 +41,17 @@ const Home = () => {
               <ExternalLink className="w-4 h-4 ml-2" />
             </a>
           </div>
+        </div>
+
+        {/* Game Section */}
+        <div className="text-center mb-16">
+          <Link
+            to="/game"
+            className="inline-flex items-center px-6 py-3 bg-purple-700 hover:bg-purple-600 rounded-lg text-white font-semibold transition-all"
+          >
+            <Sword className="w-5 h-5 mr-2" />
+            Start Your Mission
+          </Link>
         </div>
 
         {/* About Section */}
