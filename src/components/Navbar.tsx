@@ -1,25 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Scroll } from 'lucide-react';
 
 const Navbar = () => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => setScreenWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const getDisplayMode = () => {
-    if (screenWidth > 768) return 'full';
-    if (screenWidth > 480) return 'compact';
-    return 'icons';
-  };
-
-  const displayMode = getDisplayMode();
-
-  const getNavText = (full: string, compact: string) => {
+  const getNavText = (full: string) => {
     // Always return the full text for the Navbar
     return full; // Changed from returning null for compact and icons modes
   };
@@ -31,7 +15,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2">
             <img src="/images/thronegelt.png" alt="Throne Gelt" className="w-8 h-8" />
             <span className="text-xl font-bold text-purple-100 bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse">
-              {getNavText('Throne Gelt', 'TG')}
+              {getNavText('Throne Gelt')}
             </span>
           </Link>
 
@@ -42,7 +26,7 @@ const Navbar = () => {
               title="Ultramarine Paper"
             >
               <Scroll className="w-5 h-5" />
-              <span className="text-sm ml-1">{getNavText('Ultramarine Paper', 'Paper')}</span>
+              <span className="text-sm ml-1">{getNavText('Ultramarine Paper')}</span>
             </Link>
           </div>
         </div>
