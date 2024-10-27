@@ -8,7 +8,7 @@ const Home = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
         <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-6xl font-bold mb-16 pt-8">
+          <h1 className="text-4xl md:text-6xl font-bold mb-16 pt-12 bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse">
             Throne Gelt
           </h1>
           <img
@@ -28,7 +28,9 @@ const Home = () => {
               Receive free thrones
             </h2>
             <p className="text-purple-300 text-2xl">
-              To <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse">have your wallet blessed </span> by the thrones of the emperor, <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse">DM a prayer </span> along with your wallet address to this X Account.
+              To <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse">have your wallet blessed </span> by the thrones of the emperor, 
+              <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse"> Follow & DM a prayer </span>
+               along with your wallet address to this X Account.
             </p>
           </div>
           
@@ -41,6 +43,14 @@ const Home = () => {
             >
               Follow @ThroneGelt
               <ExternalLink className="w-4 h-4 ml-2" />
+            </a>
+            <a
+              href="https://yoroi-wallet.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-8 py-4 border border-yellow-400 rounded-lg text-yellow-400 font-bold transition-all hover:bg-yellow-400 hover:text-white"
+            >
+              We recommend the Yoroi Wallet
             </a>
           </div>
         </div>
@@ -64,7 +74,7 @@ const Home = () => {
           <p className="text-purple-300 mb-12 text-3xl">
             Throne Gelt is created for fun, art, and <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse">community tech projects</span>.
           </p>
-          <div className="flex flex-col items-center space-y-10 mb-16">
+          <div className="flex flex-col items-center space-y-10 mb-6">
             <div className="flex items-center animate-pulse">
               <Coins className="w-8 h-8 text-yellow-400 mr-2" />
               <span className="text-purple-300 text-2xl">
@@ -81,7 +91,7 @@ const Home = () => {
         </div>
 
         {/* Horizontal Divider */}
-        <div className="relative my-8">
+        <div className="relative my-24">
           <div className="h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent animate-pulse" />
         </div>
 
