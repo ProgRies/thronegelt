@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Home, Scroll} from 'lucide-react';
+import { Scroll } from 'lucide-react';
 
 const Navbar = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -20,14 +20,8 @@ const Navbar = () => {
   const displayMode = getDisplayMode();
 
   const getNavText = (full: string, compact: string) => {
-    switch (displayMode) {
-      case 'full':
-        return full;
-      case 'compact':
-        return compact;
-      case 'icons':
-        return null;
-    }
+    // Always return the full text for the Navbar
+    return full; // Changed from returning null for compact and icons modes
   };
 
   return (
@@ -36,34 +30,19 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
             <img src="/images/thronegelt.png" alt="Throne Gelt" className="w-8 h-8" />
-            <span className="text-xl font-bold text-purple-100">
+            <span className="text-xl font-bold text-purple-100 bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse">
               {getNavText('Throne Gelt', 'TG')}
             </span>
           </Link>
-          
-          <div className="flex items-center space-x-2 sm:space-x-4">
-            <Link 
-              to="/" 
-              className="flex flex-col items-center px-2 py-1 text-purple-200 hover:text-purple-400 transition"
-              title="Home"
-            >
-              <Home className="w-5 h-5" />
-              {getNavText('Home', 'Home') && (
-                <span className="text-xs mt-1">{getNavText('Homepage', 'Home')}</span>
-              )}
-            </Link>
-            
+
+          <div className="flex items-center">
             <Link 
               to="/whitepaper" 
-              className={`flex flex-col items-center px-3 py-1 ${
-                displayMode === 'icons' ? 'rounded-full' : 'rounded-lg'
-              } bg-purple-700/30 border border-purple-500/50 text-purple-200 hover:bg-purple-600/40 transition`}
+              className={`flex items-center px-3 py-1 rounded-lg bg-purple-700/30 border border-purple-500/50 text-purple-200 hover:bg-purple-600/40 transition`}
               title="Ultramarine Paper"
             >
               <Scroll className="w-5 h-5" />
-              {getNavText('Ultramarine Paper', 'Paper') && (
-                <span className="text-xs mt-1">{getNavText('Ultramarine Paper', 'Paper')}</span>
-              )}
+              <span className="text-sm ml-1">{getNavText('Ultramarine Paper', 'Paper')}</span>
             </Link>
           </div>
         </div>
