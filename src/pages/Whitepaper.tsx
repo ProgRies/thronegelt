@@ -8,6 +8,49 @@ const Whitepaper = () => {
 
   return (
     <div className="min-h-[calc(100vh-4rem)] p-4 pt-24">
+      <style>
+        {`
+          @keyframes pulse-1 {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+          }
+
+          @keyframes pulse-2 {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+          }
+
+          @keyframes pulse-3 {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+          }
+
+          @keyframes pulse-4 {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.4); }
+          }
+
+          .animate-pulse-1 {
+            animation: pulse-1 3s ease-in-out infinite;
+            animation-delay: 0s;
+          }
+
+          .animate-pulse-2 {
+            animation: pulse-2 3s ease-in-out infinite;
+            animation-delay: 3s; /* Start after the first icon */
+          }
+
+          .animate-pulse-3 {
+            animation: pulse-3 3s ease-in-out infinite;
+            animation-delay: 6s; /* Start after the second icon */
+          }
+
+          .animate-pulse-4 {
+            animation: pulse-4 3s ease-in-out infinite;
+            animation-delay: 9s; /* Start after the third icon */
+          }
+        `}
+      </style>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <Scroll className="w-16 h-16 text-purple-400 mx-auto mb-4" />
@@ -55,19 +98,19 @@ const Whitepaper = () => {
             <div className="flex flex-col space-y-4">
               <div className="flex items-center justify-between p-4 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-lg shadow-lg">
                 <div className="text-lg font-bold text-gray-800 ">Automatic Payments - In development!</div>
-                <div className="w-10 h-10 flex items-center justify-center text-white"><Coins /></div>
+                <div className="w-10 h-10 flex items-center justify-center text-white animate-pulse-1"><Coins /></div>
               </div>
               <div className="flex items-center justify-between p-4 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-lg shadow-lg">
                 <div className="text-lg font-bold text-gray-800 ">NFTs - Utility for your thrones.</div>
-                <div className="w-10 h-10 flex items-center justify-center text-white"><Image /></div>
+                <div className="w-10 h-10 flex items-center justify-center text-white animate-pulse-2"><Image /></div>
               </div>
               <div className="flex items-center justify-between p-4 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-lg shadow-lg">
                 <div className="text-lg font-bold text-gray-800 ">Smart Contracts - Sign your oath to the emperor.</div>
-                <div className="w-10 h-10 flex items-center justify-center text-white"><FileText /></div>
+                <div className="w-10 h-10 flex items-center justify-center text-white animate-pulse-3"><FileText /></div>
               </div>
               <div className="flex items-center justify-between p-4 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-lg shadow-lg">
                 <div className="text-lg font-bold text-gray-800 ">Machine God - Treasury powered by AI-X account.</div>
-                <div className="w-10 h-10 flex items-center justify-center text-white"><Cpu /></div>
+                <div className="w-10 h-10 flex items-center justify-center text-white animate-pulse-4"><Cpu /></div>
               </div>
             </div>
           </div>
