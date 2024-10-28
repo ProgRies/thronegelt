@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Scroll, Coins, Image, FileText, Cpu } from 'lucide-react';
 
 const Whitepaper = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
+
   return (
     <div className="min-h-[calc(100vh-4rem)] p-4 pt-24">
       <div className="max-w-4xl mx-auto">
@@ -25,6 +29,12 @@ const Whitepaper = () => {
             </p>
           </div>
 
+          <div className="p-0 rounded-lg bg-gradient-to-br from-purple-900/20 to-blue-900/20 border border-purple-500/20">
+            <div className="flex justify-center">
+              <img src="/images/coins_being_launch_into_space.png" alt="Coins being launched into the air" className="w-full h-full object-cover rounded-lg" />
+            </div>
+          </div>
+
           <div className="p-8 rounded-lg bg-gradient-to-br from-purple-900/20 to-blue-900/20 border border-purple-500/20 border-2 border-yellow-400 shadow-[0_0_10px_rgba(255,215,0,0.5)]">
             <h2 className="text-2xl md:text-3xl font-bold text-purple-200 mb-6">Technology</h2>
             <p className="text-lg md:text-xl text-purple-300/90 leading-relaxed whitespace-pre-line">
@@ -32,6 +42,12 @@ const Whitepaper = () => {
               <br /><br />
               Additionally, Throne Gelt is indivisible, which means you cannot break it down into smaller parts. Each token is a whole unit, reinforcing its status as a complete and valuable asset.
             </p>
+          </div>
+
+          <div className="p-0 rounded-lg bg-gradient-to-br from-purple-900/20 to-blue-900/20 border border-purple-500/20">
+            <div className="flex justify-center">
+              <img src="/images/coins_being_launch_into_ship.png" alt="Coins being launched into the air" className="w-full h-full object-cover rounded-lg" />
+            </div>
           </div>
 
           <div className="p-8 rounded-lg bg-gradient-to-br from-purple-900/20 to-blue-900/20 border border-purple-500/20">
@@ -56,6 +72,12 @@ const Whitepaper = () => {
             </div>
           </div>
 
+          <div className="p-0 rounded-lg bg-gradient-to-br from-purple-900/20 to-blue-900/20 border border-purple-500/20">
+            <div className="flex justify-center">
+              <img src="/images/shipstream.png" alt="Coins being launched into the air" className="w-full h-full object-cover rounded-lg" />
+            </div>
+          </div>
+
           <div className="p-8 rounded-lg bg-gradient-to-br from-purple-900/20 to-blue-900/20 border border-purple-500/20 border-2 border-yellow-400 shadow-[0_0_10px_rgba(255,215,0,0.5)]">
             <h2 className="text-2xl md:text-3xl font-bold text-purple-200 mb-6">Distribution Mechanism</h2>
             <p className="text-lg md:text-xl text-purple-300/90 leading-relaxed whitespace-pre-line">
@@ -63,6 +85,12 @@ const Whitepaper = () => {
               <br /><br />
               Soon, the <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse">best prayers</span> will be publicly shared by the account. The highest-rated, reposted, and interacted-with posts will bless the servant with even more thrones, <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse">incentivizing</span> creative prayers and gifts, which in return will incentivize a healthy community about uplifting each other's work.
             </p>
+          </div>
+
+          <div className="p-0 rounded-lg bg-gradient-to-br from-purple-900/20 to-blue-900/20 border border-purple-500/20">
+            <div className="flex justify-center">
+              <img src="/images/lavaship.png" alt="Coins being launched into the air" className="w-full h-full object-cover rounded-lg" />
+            </div>
           </div>
 
           <div className="p-8 rounded-lg bg-gradient-to-br from-purple-900/20 to-blue-900/20 border border-purple-500/20">
